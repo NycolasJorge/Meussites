@@ -6,6 +6,23 @@
  *   Webflow.push(readyFunction);
  */
 
+const video = document.getElementById('courseVideo');
+    video.addEventListener('click', () => {
+        if (video.muted) {
+            video.muted = false;
+            video.play();
+        }
+    });
+
+    video.addEventListener('timeupdate', () => {
+        if (video.currentTime < 5) {
+            video.playbackRate = 2;
+        } else {
+            video.playbackRate = 1;
+        }
+    });
+
+
 (() => {
     var q_ = Object.create;
     var zr = Object.defineProperty;

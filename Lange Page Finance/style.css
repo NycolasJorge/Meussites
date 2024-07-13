@@ -1,3 +1,16 @@
+.div-video {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+}
+
+#courseVideo {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
